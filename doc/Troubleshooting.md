@@ -20,14 +20,19 @@ rstick_down=-Rz
 ```
 Where rstick_xxxx could be: Z, -Z, Rz, -Rz, Rx, -Rx, Ry, -Ry, Slider, -Slider, Dial, -Dial (try all combinations to find the right one)
 
-## My XBOX One S/X controller is not detected
-This usually happens when you try to start the controller (press the XBOX button) when the USB is already connected to the switch.
-Try the following procedure:
+## My Xbox One S/X Controller is not detected or takes ~1 minute to be detected (Dock Mode)
+If your Xbox One S/X controller is not being detected by the Switch or takes a long time (~1 minute) to connect, please follow the guidance below.
+ - The controller must be powered on before it is connected to the Switch. If not, it will not be detected.
+ - When using the controller in dock mode, the Switch may take approximately 1 minute to detect it.
+ - To reduce detection time, consider using a USB-C to USB-C adapter and connecting the controller in handheld mode.
+(For additional context, refer to Issue #66.)
 
-1. Disconnect the controller from the switch
-2. Shut down the controller
-3. Power on the controller
-4. Connect the controller to the switch (make sure the switch is set to wake up).
+Recommended procedure to ensure proper detection:
+ 1. Disconnect the controller from the Switch
+ 2. Power off the controller
+ 3. Turn the controller back on
+ 4. Connect the controller to the Switch (Ensure the Switch is configured to wake when a controller is connected)
+ 5. Wait up to 1 minute for the controller to be recognized
 
 ## I got error: "Failed to acquire USB interface - Error: 0x25A8C ..."
 This error occur when two drivers try to acquire the controller.
